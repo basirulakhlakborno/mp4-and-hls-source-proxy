@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "serve": "deno run --allow-net deno-proxy.ts"
+  }
+}
+

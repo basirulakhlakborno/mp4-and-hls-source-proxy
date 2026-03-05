@@ -71,23 +71,6 @@ npm start    # runs: node normal-proxy.ts
 
 The server defaults to `http://localhost:8788`.
 
-### One‑click deploy to Render
-
-You can deploy the Node proxy to Render as a free web service:
-
-- Create a new **Web Service** on Render.
-- Point it at the GitHub repo `basirulakhlakborno/mp4-and-hls-source-proxy`.
-- Set:
-  - **Root Directory**: `node`
-  - **Build Command**: `npm install`
-  - **Start Command**: `npm start`
-
-Example button you can paste into your GitHub `README.md` in the `mp4-and-hls-source-proxy` repo:
-
-```markdown
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
-```
-
 Example:
 
 ```bash
@@ -101,13 +84,12 @@ In a Vercel project, put:
 - `vercel/vercel-proxy.ts`
 - `vercel/vercel.json`
 
-at the project root (or adjust paths), then deploy. The function will be exposed at the root:
+at the project root (or adjust paths), then deploy. The function will be exposed as:
 
-- `GET /m3u8-proxy?url=...&headers=...`
-- `GET /mp4-proxy?url=...&headers=...`
-- `GET /ts-segment?url=...&headers=...`
-- `GET /fetch?url=...&headers=...`
-- `GET /hls/:sourceid`, `GET /ts/:sourceid`, `GET /mp4/:sourceid`
+- `GET /api/vercel-proxy/m3u8-proxy?url=...&headers=...`
+- `GET /api/vercel-proxy/mp4-proxy?url=...&headers=...`
+- `GET /api/vercel-proxy/ts-segment?url=...&headers=...`
+- `GET /api/vercel-proxy/fetch?url=...&headers=...`
 
 ## License
 
