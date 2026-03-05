@@ -36,7 +36,7 @@ All Runtimes normalize URLs with multiple `?` characters in the query string and
 - `node/normal-proxy.ts` – plain Node.js HTTP proxy (Node 18+)
 - `node/package.json` – Node project config
 - `vercel/vercel-proxy.ts` – Vercel function handler (TypeScript, `@vercel/node`)
-- `vercel/vercel.json` – minimal Vercel config wiring `/api/vercel-proxy/*` to the handler
+- `vercel/vercel.json` – Vercel config; routes at root (`/m3u8-proxy`, `/hls/:sourceid`, etc.)
 
 If you want to use this repository standalone (as in `https://github.com/basirulakhlakborno/mp4-and-hls-source-proxy`), place the runtime file you care about (`deno-proxy.ts`, `normal-proxy.ts`, or `vercel-proxy.ts`) at the repository root together with this `README.md` and `LICENSE`.
 
@@ -82,11 +82,7 @@ You can deploy the Node proxy to Render as a free web service:
   - **Build Command**: `npm install`
   - **Start Command**: `npm start`
 
-Example button you can paste into your GitHub `README.md` in the `mp4-and-hls-source-proxy` repo:
-
-```markdown
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
-```
 
 Example:
 
