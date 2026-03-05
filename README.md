@@ -12,10 +12,18 @@ All runtimes share the same request format and `sourceid` encoding, so the same 
 
 ## Deploy
 
-One-click deploy to your preferred runtime (set **Root Directory** to `vercel` on Vercel, `node` on Render, and connect the `dono` folder on Deno Deploy):
+One-click deploy to your preferred runtime (set **Root Directory** to `vercel` on Vercel, `node` on Render, and connect the `dono` folder on Deno Deploy).
+
+### Deploy to Vercel
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbasirulakhlakborno%2Fmp4-and-hls-source-proxy%2Ftree%2Fmain%2Fvercel)
+
+### Deploy to Render
+
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/basirulakhlakborno/mp4-and-hls-source-proxy)
+
+### Deploy to Deno Deploy
+
 [![Deploy to Deno Deploy](https://img.shields.io/badge/Deploy-Deno%20Deploy-474747?style=for-the-badge&logo=deno)](https://dash.deno.com/new?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbasirulakhlakborno%2Fmp4-and-hls-source-proxy%2Fmain%2Fdono%2Fdeno-proxy.ts)
 
 ## Features
