@@ -8,7 +8,7 @@
   ],
   "routes": [
     {
-      "src": "/api/vercel-proxy/(.*)",
+      "src": "/(.*)",
       "dest": "vercel-proxy.ts?path=$1"
     }
   ]

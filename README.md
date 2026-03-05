@@ -43,7 +43,7 @@ If you want to use this repository standalone (as in `https://github.com/basirul
 ## Deno usage
 
 ```bash
-cd proxy/dono
+cd dono
 deno task serve
 # or
 deno run --allow-net deno-proxy.ts
@@ -64,25 +64,12 @@ EOF
 ## Node.js usage
 
 ```bash
-cd proxy/node
+cd node
 npm install  # only needed if you add deps
 npm start    # runs: node normal-proxy.ts
 ```
 
 The server defaults to `http://localhost:8788`.
-
-### One‑click deploy to Render
-
-You can deploy the Node proxy to Render as a free web service:
-
-- Create a new **Web Service** on Render.
-- Point it at the GitHub repo `basirulakhlakborno/mp4-and-hls-source-proxy`.
-- Set:
-  - **Root Directory**: `node`
-  - **Build Command**: `npm install`
-  - **Start Command**: `npm start`
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
 
 Example:
 
